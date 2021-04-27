@@ -36,17 +36,9 @@ export default function Index({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts([
-    "title",
-    "date",
-    "featured",
-    "slug",
-    "author",
-    "coverImage",
-    "excerpt",
-  ]);
+  const posts = await getAllPosts();
 
   return {
-    props: { allPosts },
+    props: { allPosts: posts.map((post) => post.data) },
   };
 }
