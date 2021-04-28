@@ -6,7 +6,8 @@ date: "2021-04-25T05:35:07.322Z"
 author: _authors/jj.md
 ogImage:
   url: "/assets/blog/why-tina/cover.jpg"
-featured: "false"
+featured: false
+_template: simple_post
 ---
 
 Lorem ipsum dolor sit amet ...

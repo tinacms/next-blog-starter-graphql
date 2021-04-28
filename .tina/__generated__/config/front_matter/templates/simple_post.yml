@@ -1,0 +1,33 @@
+---
+label: Simple
+name: simple_post
+fields:
+  - type: text
+    label: Title
+    name: title
+  - type: text
+    label: Excerpt
+    name: excerpt
+  - type: text
+    label: Cover Image
+    name: coverImage
+  - type: text
+    label: Date
+    name: date
+  - name: author
+    label: Author
+    type: select
+    config:
+      source:
+        type: pages
+        section: authors
+  - type: field_group
+    name: ogImage
+    label: Open Graph Image
+    fields:
+      - type: text
+        label: URL
+        name: url
+  - type: boolean
+    label: Featured
+    name: featured
