@@ -40,6 +40,7 @@ export async function getStaticProps() {
     "title",
     "date",
     "slug",
+    "featured",
     "author",
     "coverImage",
     "excerpt",
